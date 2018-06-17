@@ -1,0 +1,170 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+   
+}
+body{
+    overflow-x:hidden;  /*для горизонтального*/
+}
+
+.container,
+.navbar {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Плавні зміни властивостей лінків */
+a {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}s
+
+/*************************************/
+/* Зміни CSS коду розпочинати звідси */
+/*************************************/
+
+section {
+    height: 105vh;    /* !!! Тимчасово для відладки !!! Висота секцій рівна висоті екрану */
+    padding: 100px 250;  /* Внітрішні відступи зверху та знизу у секціях <section> */
+    
+}
+p {
+    width: 300px;
+}
+h1 {
+    font-size: 60px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 5%;
+    
+}
+h3 {
+    font-size: 44px;
+/*    padding-top: 80px;*/
+/*    padding-bottom: 50px;*/
+    font-family: 'Amatic SC', cursive;    
+    color: #FF0000;
+    padding-bottom: 25px;
+    align-items: center;
+}
+h4 {
+    font-size: 44px;
+    font-family: 'Amatic SC', cursive;    
+    color: #000000;
+    padding-bottom: 25px;
+    align-items: center;
+}
+h5 {
+    font-size: 44px;
+    font-family: 'Amatic SC', cursive;    
+    color: #FF0000;
+    padding-bottom: 25px;
+    align-items: center;
+}
+p1 {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+}
+
+.item2 {
+    padding-bottom: 60px;
+}
+
+.item3 {
+    padding-left: 65px;
+    padding-bottom: 30px;
+}
+
+#portfolio {
+    background-color: #fff;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#contact .row{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact{
+	color: white;
+}
+#contact h1{color: #646666}
+
+.form-control-white {
+    background: transparent;
+    color:#646666;
+}
+
+.form-control-white::-webkit-input-placeholder { /* WebKit browsers */
+    color: #a3a3a3;
+}
+.form-control-white:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:  #a3a3a3;
+    opacity:  1;
+}
+.form-control-white::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:  #a3a3a3;
+    opacity:  1;
+}
+.form-control-white:-ms-input-placeholder { /* Internet Explorer 10+ */
+     color:  #a3a3a3;
+}
+
+
+#f{
+    justify-content: center;
+}
+#footer i{
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+}
+#foto{
+    
+    width: 100%;
+} 
+#s2, #s3 {
+    background-color: #000000; /* Колір фону для секцій #s2, #s4 */
+}
+
+#s2 {
+    justify-content: center;
+}
+
+a {
+    color: #FF0000;  /* Колір текстових лінків */
+}
+#cntr {
+    padding-top: 2%;
+}
+a:focus,
+a:hover {
+    color: #FF0000;  /* Колір текстових лінків для псевдокласів */
+}
+
+/**************************************/
+/* Зміна властивостей для breakpoints */
+/**************************************/
+
+@media screen and (max-width:575px) {
+    .container,
+    .navbar {
+        padding-left: 15px;    /* Для Small додати відступи */
+        padding-right: 15px;   /* зліва та справа у .container та .navbar */
+    }
+
+    /* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+    section {
+        padding: 25px 0;
+    }
+    #cntr {
+        padding-top: 50;
+    }
+}
